@@ -14,10 +14,6 @@ public class Comment {
 
     private ObjectId visitorId;//user,author
 
-   // private String visitorType; //user,author
 
     private String content;
-
-//    private LocalDateTime createdAt;
-
 }

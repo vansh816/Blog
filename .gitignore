@@ -36,3 +36,4 @@ target/
 vectorstore.json
 .env
 application.properties
+src/main/resources/application.properties

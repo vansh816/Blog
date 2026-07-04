@@ -15,7 +15,5 @@ public class Like {
 
     private ObjectId visitorId;
 
-   // private String visitorType; // "USER" or "author"
-  //  private LocalDateTime createdAt;
 
 }
