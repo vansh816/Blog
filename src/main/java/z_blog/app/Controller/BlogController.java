@@ -44,16 +44,6 @@ import java.util.Optional;
             }
             else return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-//        @DeleteMapping("/admin")//Admin ke liye
-//        public ResponseEntity<?> deleteAllBlogs(){
-//            List<Blog> all=blogService.getAll();
-//            if(!all.isEmpty()){
-//                blogService.deleteAllBlogs();
-//                return ResponseEntity.ok("All Blogs Deleted");
-//                return new ResponseEntity<>(all, HttpStatus.OK);
-//            }
-//            else return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//        }
         @GetMapping("/author/{authorId}")//Specific Author ke blog
         public ResponseEntity<?> getBlog(@PathVariable ObjectId authorId){
             Optional<Visitor> visitor=visitorService.getVisitorById(authorId);

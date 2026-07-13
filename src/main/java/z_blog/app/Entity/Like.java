@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "Like")
-@Data
+
 public class Like {
 
     @Id
@@ -15,5 +15,27 @@ public class Like {
 
     private ObjectId visitorId;
 
+    public ObjectId getId() {
+        return id;
+    }
 
+    public void setId(ObjectId id) {
+        this.id = id;
+    }
+
+    public ObjectId getVisitorId() {
+        return visitorId;
+    }
+
+    public void setVisitorId(ObjectId visitorId) {
+        this.visitorId = visitorId;
+    }
+
+    public ObjectId getBlogId() {
+        return blogId;
+    }
+
+    public void setBlogId(ObjectId blogId) {
+        this.blogId = blogId;
+    }
 }

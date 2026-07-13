@@ -69,4 +69,8 @@ public class AIController {
         else {
             return "No Blog Found";
         }}
+    @GetMapping("/kkk")
+    public String kkk(){
+        return "hello";
+    }
 }
